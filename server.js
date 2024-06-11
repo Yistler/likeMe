@@ -36,7 +36,7 @@ app.put("/post/:id", async(req, res)=>{
     try{
         const id = req.params.id;
         const result = await like(id);
-    res.json(result);
+        res.json(result);
     }catch(err){
         console.error("Error al dar like", err);
     }

@@ -4,7 +4,7 @@ LikeMe es una aplicación web que permite a los usuarios crear publicaciones y d
 ```
 CREATE DATABASE likeme;
 CREATE TABLE posts (id SERIAL, usuario VARCHAR(25), url VARCHAR(1000),
-descripcion VARCHAR(255), likes INT);
+descripcion VARCHAR(255), likes INT DEFAULT 0);
 ```
 instalar las dependencias
 correr el servidor
